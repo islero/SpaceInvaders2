@@ -32,13 +32,18 @@ public class Score : MonoBehaviour {
 	public void LoseLife() {
 		current_health--;
 	}
+//---- Противники слишком близко к игроку
+	public void LoseAllLife(){
+		current_health = 0;
+	}
+
 //---- Попадпние игрока в противника
 	public void KillEnemy(){
 		current_enemies--;
 	}
 //---- Обновления количества врагов
 	public void RestoreEnemies(){
-		current_enemies = 24;
+		current_enemies = 18;
 	}
 	void Start(){
 		current_score = 0;
@@ -61,7 +66,7 @@ public class Score : MonoBehaviour {
 
 
 //---- Конец игры
-		if(current_health == 0){
+		if(current_health <= 0){
 
 			GUI.Label (new Rect (55, 50, 300, 50), "GAME OVER", score_style);
 

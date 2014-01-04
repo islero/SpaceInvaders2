@@ -48,7 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Bullet\Bottom_destroy.cs" />
      <Compile Include="Assets\Scripts\Bullet\Bullet_destroy.cs" />
-     <Compile Include="Assets\Scripts\Enemy\Enemy_move.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController\EnemyBase.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController\Enemy_move.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController\groupOneControll.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController\groupThreeControll.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController\groupTwoControll.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy_near_player.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy_shoting.cs" />
      <Compile Include="Assets\Scripts\EnemyCreation.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
